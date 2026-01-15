@@ -5,14 +5,16 @@
   "minVersion": "0.8",
   "refmap": "start_core.mixins.refmap.json",
   "mixins": [
-    "ResearchManagerDataItemMixin",
-    "CustomStackTooltipsHandlerMixin",
-    "FusionEnergyPowerMixin",
     "ConverterRendererMixin",
-    "ParallelHatchPartMachineMixin",
-    "WireRecipeHandlerMixin",
+    "CustomStackTooltipsHandlerMixin",
+    "FluidHatchPartMachineMixin",
+    "FusionEnergyPowerMixin",
+    "MaintenanceHatchPartMachineMixin",
     "MaterialRecipeHandlerMixin",
-    "RecipeLogicProviderMixin"
+    "ParallelHatchPartMachineMixin",
+    "RecipeLogicProviderMixin",
+    "ResearchManagerDataItemMixin",
+    "WireRecipeHandlerMixin"
   ],
   "client": [
   ],
