@@ -46,5 +46,7 @@ public class StarTMachines {
         StarTAbyssalContainmentMachines.init();
         StarTThreadingControllerMachines.init();
         StarTThreadingStatBlocks.init();
+
+        TestMachine.init();
     }
 }

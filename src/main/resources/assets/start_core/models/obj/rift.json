@@ -1,0 +1,9 @@
+{
+  "loader": "forge:obj",
+  "flip_v": true,
+  "model": "start_core:models/obj/rift.obj",
+  "textures": {
+    "texture0": "start_core:obj/alpha",
+    "texture1": "start_core:obj/emission"
+  }
+}
