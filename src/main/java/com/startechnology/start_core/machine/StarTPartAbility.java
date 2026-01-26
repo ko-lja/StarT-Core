@@ -11,4 +11,6 @@ public class StarTPartAbility {
 
     /* Enables the usage of threading with the controller in this machine */
     public static final PartAbility THREADING_CONTROLLER = new PartAbility("threading_controller");
+
+    public static final PartAbility SINGLE_AMP_ENERGY = new PartAbility("single_amp_energy");
 }
