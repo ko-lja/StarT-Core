@@ -8,7 +8,6 @@ import java.util.Map;
 
 import com.startechnology.start_core.machine.redstone.StarTRedstoneInterfacePartMachine;
 import lombok.Getter;
-import org.jetbrains.annotations.Nullable;
 
 import com.gregtechceu.gtceu.api.data.chemical.ChemicalHelper;
 import com.gregtechceu.gtceu.api.data.chemical.material.Material;
@@ -43,13 +42,10 @@ public class StarTHellForgeMachine extends WorkableElectricMultiblockMachine imp
     protected TickableSubscription tryTickSub;
     private boolean startHeatLoss;
 
-    public ArrayList<StarTRedstoneInterfacePartMachine> redstoneOutputHatches;
-
     public StarTHellForgeMachine(IMachineBlockEntity holder, Object... args) {
         super(holder, args);
         this.temperature = 0;
         this.startHeatLoss = false;
-        this.redstoneOutputHatches = new ArrayList<>();
     }
 
     @Override
@@ -129,7 +125,11 @@ public class StarTHellForgeMachine extends WorkableElectricMultiblockMachine imp
     }
 
     private void temperatureChanged() {
-        if (this.redstoneOutputHatches.isEmpty()) return;
+        for (var temperature : Fluids.values()) {
+            var percentageOfTier = Math.min(this.temperature * temperature.getTempReciprocal(), 15);
+            this.setIndicatorValue("variadic.start_core.indicator.hellforge." + temperature.getTemperature(),
+                    (int) Math.floor(percentageOfTier));
+        }
 
         Arrays.stream(Fluids.values()).forEach(
                 entry -> {
@@ -159,9 +159,9 @@ public class StarTHellForgeMachine extends WorkableElectricMultiblockMachine imp
 
                 if (this.temperature < maxHeat) {
 
-                    Integer addTemperature = ingredientFluid.getFluid().getFluidType().getTemperature() / 1_000_000;
+                    int addTemperature = ingredientFluid.getFluid().getFluidType().getTemperature() / 1_000_000;
 
-                    Integer amountToAdd = (int) (double) (ingredientFluid.getAmount() / 1000);
+                    int amountToAdd = ingredientFluid.getAmount() / 1000;
                     this.temperature = Math.min(temperature + addTemperature * amountToAdd, maxHeat);
                     this.temperatureChanged();
 
