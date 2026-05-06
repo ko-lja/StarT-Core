@@ -23,6 +23,7 @@ public class StarTJadePlugin implements IWailaPlugin {
         registration.registerBlockDataProvider(new StarTMinimumParallelCountProvider(), BlockEntity.class);
         registration.registerBlockDataProvider(new StarTVacuumChemicalReactionChamberProvider(), BlockEntity.class);
         registration.registerBlockDataProvider(new StarTModularInterfaceHatchPartMachineProvider(), BlockEntity.class);
+        registration.registerBlockDataProvider(new StarTMEWirelessProvider(), BlockEntity.class);
     }
 
     @Override
@@ -39,5 +40,6 @@ public class StarTJadePlugin implements IWailaPlugin {
         registration.registerBlockComponent(new StarTMinimumParallelCountProvider(), Block.class);
         registration.registerBlockComponent(new StarTVacuumChemicalReactionChamberProvider(), Block.class);
         registration.registerBlockComponent(new StarTModularInterfaceHatchPartMachineProvider(), Block.class);
+        registration.registerBlockComponent(new StarTMEWirelessProvider(), Block.class);
     }
 }

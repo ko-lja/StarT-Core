@@ -372,7 +372,7 @@
   "start_core.multiblock.pattern.error.vacuumpump": "§cAll vacuum pumps must be the same§r",
 
   "block.start_core.abydos_marker": "Abydos",
-  
+
   "start_core.machine.sterile_hatch.tooltip": "Makes your Multiblocks extra squeaky clean and sterile!",
   "block.start_core.sterile_cleaning_maintenance_hatch": "Biosecure Sterilisation Maintenance Hatch",
   "start_core.uuid_safe.fail_nearest_player": "Issue regarding UUID's occured, Please visit Dream-Link at %s and consider replacing if Owner is not correct.",
@@ -626,6 +626,75 @@
 
   "variadic.start_core.indicator.solar_machine": "Percentage to %s K",
   "variadic.start_core.description.solar_machine": "A clamped value between 0-15 of the (avg temp / %s K) * 15 (In Celsius, K - 273)",
-  
-  "block.start_core.zpm_fluid_drilling_rig": "§cElite Fluid Drilling Rig III§r"
+
+  "block.start_core.zpm_fluid_drilling_rig": "§cElite Fluid Drilling Rig III§r",
+
+  "start_core.machine.me_channel_input_hatch.tooltip.0": "Accepts a cabled AE2 connection and exposes 32 wireless channels.",
+  "start_core.machine.me_channel_input_hatch.tooltip.1": "Each linked wireless GT AE machine reserves 1 channel from one hatch.",
+  "start_core.gui.me_channel_input_hatch.title": "ME Channel Input Hatch",
+  "start_core.gui.me_channel_input_hatch.network.online": "Network: online",
+  "start_core.gui.me_channel_input_hatch.network.offline": "Network: offline",
+  "start_core.gui.me_channel_input_hatch.reserved": "Reserved: %s / %s",
+
+  "start_core.machine.me_radio_tower.tooltip.0": "Distributes AE2 channels wirelessly to GregTech AE machines.",
+  "start_core.machine.me_radio_tower.tooltip.1": "Tower casings set the tier, range, and simultaneous wireless capacity.",
+  "start_core.machine.me_radio_tower.tooltip.2": "The final tier supports infinite cross-dimensional operation.",
+  "start_core.machine.me_radio_tower.data_stick.name": "§oME Radio Tower Data",
+  "start_core.machine.me_radio_tower.stored_on_machine": "Stored ME Radio Tower %s on %s.",
+  "start_core.machine.me_radio_tower.not_loaded_short": "That tower is not currently loaded.",
+  "start_core.machine.me_radio_tower.not_configured": "No ME Radio Tower is configured on this machine.",
+  "start_core.machine.me_radio_tower.no_nearby_tower": "No loaded ME Radio Tower is in wireless range.",
+  "start_core.machine.me_radio_tower.not_loaded": "That ME Radio Tower is not currently loaded.",
+  "start_core.machine.me_radio_tower.assignment_cleared": "Cleared the ME Radio Tower assignment.",
+  "start_core.machine.me_radio_tower.not_formed": "The ME Radio Tower is not formed.",
+  "start_core.machine.me_radio_tower.already_linked": "That machine is already linked to this tower.",
+  "start_core.machine.me_radio_tower.memory_full": "This tower has no more wireless memory available.",
+  "start_core.machine.me_radio_tower.out_of_range": "That machine is outside the tower's wireless range.",
+  "start_core.machine.me_radio_tower.cable_connected": "Disconnect the machine's cable connection before linking it wirelessly.",
+  "start_core.machine.me_radio_tower.no_free_channels": "No free wireless channels are available on this tower.",
+  "start_core.machine.me_radio_tower.linked_machine": "Linked %s to tower %s.",
+  "start_core.machine.me_radio_tower.disconnected_machine": "Disconnected machine at %s.",
+  "start_core.machine.me_radio_tower.machine_location": "ME machine location: %s",
+  "start_core.machine.me_radio_tower.copied_to_data_stick": "Copied ME Radio Tower %s to the data stick.",
+  "start_core.machine.me_radio_tower.tier.steel": "Steel",
+  "start_core.machine.me_radio_tower.tier.stainless_steel": "Stainless Steel",
+  "start_core.machine.me_radio_tower.tier.titanium": "Titanium",
+  "start_core.machine.me_radio_tower.tier.tungstensteel": "Tungstensteel",
+  "start_core.machine.me_radio_tower.range.infinite": "§dInfinite",
+
+  "start_core.gui.me_radio_tower.tower_id": "Tower ID: §e%s",
+  "start_core.gui.me_radio_tower.tier_range": "Tier: §5%s§r  Range: %s",
+  "start_core.gui.me_radio_tower.connections": "Reserved: §3%s §r/ §9%s§r  Active: §3%s§r  Saved: §9%s",
+  "start_core.gui.me_radio_tower.eu_per_tick": "EU/t: §c%s",
+  "start_core.gui.me_radio_tower.status.online": "§aOnline",
+  "start_core.gui.me_radio_tower.status.standby": "§6Standby",
+  "start_core.gui.me_radio_tower.status.saved": "§8Saved",
+  "start_core.gui.me_radio_tower.unloaded_machine": "Unloaded AE machine",
+  "start_core.gui.me_radio_tower.status_row": "[%s§r] §7%s",
+  "start_core.gui.me_radio_tower.button.locate": "Loc",
+  "start_core.gui.me_radio_tower.button.disconnect": "Cut",
+
+  "start_core.gui.wireless_machine_tab.title": "Wireless",
+  "start_core.gui.wireless_machine_tab.tooltip": "ME Radio Tower controls",
+  "start_core.gui.wireless_machine_tab.configured_tower": "Configured tower:",
+  "start_core.gui.wireless_machine_tab.none": "none",
+  "start_core.gui.wireless_machine_tab.tower_status.loaded": "Tower status: loaded",
+  "start_core.gui.wireless_machine_tab.tower_status.not_loaded": "Tower status: not loaded",
+  "start_core.gui.wireless_machine_tab.wireless_link.not_configured": "Wireless link: not configured",
+  "start_core.gui.wireless_machine_tab.wireless_link.waiting": "Wireless link: waiting for tower",
+  "start_core.gui.wireless_machine_tab.wireless_link.online": "Wireless link: online",
+  "start_core.gui.wireless_machine_tab.wireless_link.standby": "Wireless link: standby",
+  "start_core.gui.wireless_machine_tab.wireless_link.disconnected": "Wireless link: disconnected",
+  "start_core.gui.wireless_machine_tab.cable_link.detected": "Cable link: detected",
+  "start_core.gui.wireless_machine_tab.cable_link.none": "Cable link: none",
+  "start_core.gui.wireless_machine_tab.button.connect": "Connect",
+  "start_core.gui.wireless_machine_tab.button.drop": "Drop",
+  "start_core.gui.wireless_machine_tab.button.clear": "Clear",
+
+  "start_core.multiblock.pattern.error.me_radio_tower_tier": "§cAll tower casings must use the same tier.§r",
+
+  "config.jade.plugin_start_core.me_wireless": "[Star Technology] Wireless ME Info",
+  "start_core.jade.me_radio_tower.connected_machines": "Connected Machines: %s / %s",
+  "start_core.jade.me_wireless.connected": "Connected Wirelessly",
+  "start_core.jade.me_channel_input_hatch.channels_used": "Channels Used: %s / %s"
 }

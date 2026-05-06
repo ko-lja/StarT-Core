@@ -13,7 +13,12 @@
     "GTRecipeModifiersMixin",
     "MaintenanceHatchPartMachineMixin",
     "MaterialRecipeHandlerMixin",
+    "MEBusPartMachineMixin",
+    "MEHatchPartMachineMixin",
+    "MEInputBusPartMachineMixin",
+    "MEInputHatchPartMachineMixin",
     "MEPatternBufferPartMachineMixin",
+    "MEStockingBusPartMachineMixin",
     "MultiblockControllerMachineMixin",
     "ParallelHatchPartMachineAccessor",
     "ParallelHatchPartMachineMixin",
@@ -27,9 +32,9 @@
     "ponder.PonderIndexMixin",
     "ponder.PonderInstructionMixin",
     "ponder.PonderLocalizationMixin",
+    "ponder.PonderOverlayInstructionMixin",
     "ponder.PonderTagRegistryAccessor",
-    "ponder.PonderWorldInstructionsMixin",
-    "ponder.PonderOverlayInstructionMixin"
+    "ponder.PonderWorldInstructionsMixin"
   ],
   "injectors": {
     "defaultRequire": 1

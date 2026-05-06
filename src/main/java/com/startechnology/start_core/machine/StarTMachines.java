@@ -20,6 +20,7 @@ import com.startechnology.start_core.machine.solar.StarTSolarMachines;
 import com.startechnology.start_core.machine.threading.StarTThreadingControllerMachines;
 import com.startechnology.start_core.machine.threading.StarTThreadingStatBlocks;
 import com.startechnology.start_core.machine.vacuum_pump.StarTVacuumPumpMachines;
+import com.startechnology.start_core.machine.wireless.StarTWirelessMachines;
 
 public class StarTMachines {
 
@@ -44,5 +45,6 @@ public class StarTMachines {
         StarTModularConnectionHatches.init();
         StarTVacuumPumpMachines.init();
         StarTDrillingRigs.init();
+        StarTWirelessMachines.init();
     }
 }

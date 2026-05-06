@@ -51,4 +51,6 @@ public class StarTPartAbility {
     public static final PartAbility MODULAR_NODE_CONDUIT_1024A = new PartAbility("modular_node_conduit_1024a");
     public static final PartAbility MODULAR_NODE_CONDUIT_4096A = new PartAbility("modular_node_conduit_4096a");
 
+
+    public static final PartAbility ME_CHANNEL_INPUT = new PartAbility("me_channel_input");
 }
